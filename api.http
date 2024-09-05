@@ -1,0 +1,35 @@
+GET http://localhost:4004/vehicles
+
+###
+
+POST http://localhost:4004/vehicles/add
+Content-Type: application/json
+
+{
+  "marca": "Ford",
+  "modelo": "Focus",
+  "year": 2021,
+  "precio": 18000,
+  "color": "Rojo",
+  "descripcion": "Compacto con buen equilibrio entre rendimiento y confort.",
+  "estado": "Usado"
+}
+###
+
+PUT http://localhost:4004/vehicles/edit/66da15375d3a56922b799243
+Content-Type: application/json
+
+{
+    "modelo": "Yaris",
+    "year": 2010,
+    "precio": 75000,
+    "color": "Rojo",
+    "disponible": true
+    
+}
+
+###
+
+DELETE http://localhost:4004/vehicles/66da14371f50c2d15ca7e104
+
+
